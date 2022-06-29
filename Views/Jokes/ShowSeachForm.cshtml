@@ -1,16 +1,10 @@
 ﻿@model JokerWebApp.Models.Joke
 
-@{
-    ViewData["Title"] = "Create";
-}
-
-<h1>Create</h1>
-
 <h4>Joke</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="ShowSeachForm">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="JokeQuestion" class="control-label"></label>
@@ -30,7 +24,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Voltar para lista</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
